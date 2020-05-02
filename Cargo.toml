@@ -1,0 +1,19 @@
+[package]
+name = "toy_project"
+version = "0.1.0"
+authors = ["Joey Territo"]
+edition = "2018"
+description = "A crate just for testing out any Rust ideas I may have."
+default-run = "toy_project"
+publish = false
+
+[[bin]]
+name = "test_getopt"
+path = "src/bin/test_getopts.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.7.0"
+turtle = "1.0.0-rc.3"
+getopts = "0.2"
