@@ -114,7 +114,7 @@ impl Angle {
 impl fmt::Display for Angle {
 	fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
 		match *self {
-			Angle::Degrees(deg) => write!(f, "{}°", deg),
+			Angle::Degrees(deg) => write!(f, "{}º", deg),
 			Angle::Radians(rad) => write!(f, "{} rad.", rad),
 		}
 	}
